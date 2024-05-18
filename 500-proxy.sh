@@ -5,8 +5,8 @@ random_name() {
 }
 
 random_password() {
-	tr -dc '[:graph:]' </dev/urandom | head -c16
-	echo
+    tr -dc '[:alnum:]' </dev/urandom | head -c16
+    echo
 }
 
 array=(1 2 3 4 5 6 7 8 9 0 a b c d e f)
