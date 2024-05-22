@@ -15,8 +15,9 @@
 
 :three: `sudo bash <(curl -s "https://raw.githubusercontent.com/linucat/proxyv6/main/install.sh")`
 
-> :question: "How many proxy do you want to create? Example 500" <br>
-> :white_check_mark: **500** (depends on you)
+:question: "How many proxy do you want to create? Example 500"
+
+:point_right: **500** (depends on you)
 
 > [!WARNING]
 > Port starts from **10001**, if you create **500** proxies, the port range will be **10001 - 10500**
@@ -27,31 +28,36 @@
 
 :one: `sudo bash <(curl -s "https://raw.githubusercontent.com/linucat/proxyv6/main/addproxy.sh")`
 
-> :question: "Which port do you want to start from?: Example 10501"
+:question: "Which port do you want to start from?: Example 10501"
 
-> :white_check_mark: **10501**
+:point_right: **10501**
 
-> :question: "How many proxy do you want to create? Example 100"
+:question: "How many proxy do you want to create? Example 100"
 
-> :white_check_mark: **100**
+:point_right: **100**
 
 :two: `sudo reboot`
 
 ## Change Proxy Password
 
 :one: Change password in the file **`/home/proxy-installer/data.txt`**
+
 :two: `sudo bash <(curl -s "https://raw.githubusercontent.com/linucat/proxyv6/main/update.sh")`
+
 :three: `sudo reboot`
 
 ## Delete a Proxy
 
 :one: Delete line belong to the proxy in the file **`/home/proxy-installer/data.txt`**
+
 :two: `sudo bash <(curl -s "https://raw.githubusercontent.com/linucat/proxyv6/main/update.sh")`
+
 :three: `sudo reboot`
 
 ## Download Proxy List
 
 :white_check_mark: Proxy list is stored in **`/home/proxy-installer/proxy.txt`**
+
 :white_check_mark: File structure: **`IP4:PORT:LOGIN:PASS`**
 
 :point_right: If you need support, contact me @[Telegram](https://t.me/+aWqfCqk9VL41MDBl)
