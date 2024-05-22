@@ -1,39 +1,57 @@
-# Tested on 2024-May-18 Working on [Vultr VPS](https://www.vultr.com/?ref=8936554)
-
-### You can get [Free $100 Credit Here](https://www.vultr.com/?ref=9001246-8H)
+# Proxy V6 Creator Project
 
 ## Requirements
-- Centos 7 Without Selinux
-- Enable Ipv6 \64 (free)
+
+:white_check_mark: Centos 7 Without Selinux
+:white_check_mark: Enable Ipv6 \64
+
+:point_right:  [Working on Vultr VPS, get $100 free here :gift: ](https://www.vultr.com/?ref=9001246-8H)
 
 ## Installation
 
-**Log In the server as root user** and run these commands:
+:one: `sudo yum -y install epel-release`
+:two: `sudo yum -y update`
+:three: `sudo bash <(curl -s "https://raw.githubusercontent.com/linucat/proxyv6/main/install.sh")`
 
-1. `yum -y install epel-release`
+> [!TIP] 
+> :question: "How many proxy do you want to create? Example 500"
+> :white_check_mark: **500** (depends on you)
 
-2. `yum -y update`
+> [!WARNING]
+> Port starts from **10001**, if you create **500** proxies, the range will be **10001 - 10500**
 
-3. `bash <(curl -s "https://raw.githubusercontent.com/linucat/proxyv6/main/500-proxy.sh")`
+:four:  `sudo reboot`
 
-When it asks for **"How many proxy do you want to create? Example 500"**, enter the number of proxy you want to create.
+## Add Proxies
 
-## How To Download Proxy List
+:one: `sudo bash <(curl -s "https://raw.githubusercontent.com/linucat/proxyv6/main/addproxy.sh")`
 
-Proxies are stored in this file `/home/proxy-installer/proxy.txt`
+> [!TIP] 
+> :question: "Which port do you want to start from?: Example 10501"
+> :white_check_mark: **10501**
+> :question: "How many proxy do you want to create? Example 100"
+> :white_check_mark: **100**
 
-1. In you computer, open a new terminal window \
-`scp root@your-server-ip:/home/proxy-installer/proxy.txt .` 
-<br>
-<br>
-for example, if your server IP address is **192.23.34.111**:
-<br>
-`scp root@192.23.34.111:/home/proxy-installer/proxy.txt .`
+:two: `sudo reboot`
 
+## Change Proxy Password
 
-2. File structure: `IP4:PORT:LOGIN:PASS`
+:one: Change password in the file **`/home/proxy-installer/data.txt`**
+:two: `sudo bash <(curl -s "https://raw.githubusercontent.com/linucat/proxyv6/main/update.sh")`
+:three: `sudo reboot`
 
-## If you need support, contact me @[Telegram](https://t.me/+aWqfCqk9VL41MDBl)
+## Delete a Proxy
+
+:one: Delete line belong to the proxy in the file **`/home/proxy-installer/data.txt`**
+:two: `sudo bash <(curl -s "https://raw.githubusercontent.com/linucat/proxyv6/main/update.sh")`
+:three: `sudo reboot`
+
+## Download Proxy List
+
+:white_check_mark: Proxy list is stored in **`/home/proxy-installer/proxy.txt`**
+:white_check_mark: File structure: **`IP4:PORT:LOGIN:PASS`**
+
+:point_right: If you need support, contact me @[Telegram](https://t.me/+aWqfCqk9VL41MDBl)
 
 <br>
 The source : 3proxy
