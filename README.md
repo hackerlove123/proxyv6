@@ -17,7 +17,7 @@
 
 > [!TIP] 
 > :question: "How many proxy do you want to create? Example 500" <br>
-> :white_check_mark: **500** (depends on you)
+>>:white_check_mark: **500** (depends on you)
 
 > [!WARNING]
 > Port starts from **10001**, if you create **500** proxies, the range will be **10001 - 10500**
