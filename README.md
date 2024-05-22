@@ -16,10 +16,10 @@
 :three: `sudo bash <(curl -s "https://raw.githubusercontent.com/linucat/proxyv6/main/install.sh")`
 
 > :question: "How many proxy do you want to create? Example 500" <br>
->>:white_check_mark: **500** (depends on you)
+> :white_check_mark: **500** (depends on you)
 
 > [!WARNING]
-> Port starts from **10001**, if you create **500** proxies, the range will be **10001 - 10500**
+> Port starts from **10001**, if you create **500** proxies, the port range will be **10001 - 10500**
 
 :four:  `sudo reboot`
 
@@ -27,10 +27,12 @@
 
 :one: `sudo bash <(curl -s "https://raw.githubusercontent.com/linucat/proxyv6/main/addproxy.sh")`
 
-> [!TIP] 
 > :question: "Which port do you want to start from?: Example 10501"
+
 > :white_check_mark: **10501**
+
 > :question: "How many proxy do you want to create? Example 100"
+
 > :white_check_mark: **100**
 
 :two: `sudo reboot`
