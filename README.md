@@ -15,7 +15,6 @@
 
 :three: `sudo bash <(curl -s "https://raw.githubusercontent.com/linucat/proxyv6/main/install.sh")`
 
-> [!TIP] 
 > :question: "How many proxy do you want to create? Example 500" <br>
 >>:white_check_mark: **500** (depends on you)
 
