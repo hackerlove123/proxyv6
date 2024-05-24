@@ -98,11 +98,13 @@ IP4=$(curl -4 -s icanhazip.com)
 IP6=$(curl -6 -s icanhazip.com | cut -f1-4 -d':')
 echo "Internal ip = ${IP4}. Exteranl sub for ip6 = ${IP6}"
 
+echo "Which port do you want to start from?: Example 20001"
+read COUNT1
 echo "How many proxy do you want to create? Example 500"
-read COUNT
+read COUNT2
 
-FIRST_PORT=20001
-LAST_PORT=$(($FIRST_PORT + $COUNT - 1))
+FIRST_PORT=$COUNT1
+LAST_PORT=$(($FIRST_PORT + $COUNT2 - 1))
 
 gen_data >$WORKDIR/data.txt
 gen_iptables >$WORKDIR/boot_iptables.sh

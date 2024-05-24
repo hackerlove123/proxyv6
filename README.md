@@ -15,6 +15,10 @@
 
 :three: `sudo bash <(curl -s "https://raw.githubusercontent.com/linucat/proxyv6/main/install.sh")`
 
+:question: "Which port do you want to start from?: Example 20001"
+
+:point_right: **20001**
+
 :question: "How many proxy do you want to create? Example 500"
 
 :point_right: **500** (depends on you)
@@ -24,11 +28,11 @@
 
 :four:  `sudo reboot`
 
-## Add Proxies
+## Add 100 Proxies
 
 :one: `sudo bash <(curl -s "https://raw.githubusercontent.com/linucat/proxyv6/main/addproxy.sh")`
 
-:question: "Which port do you want to start from?: Example 10501"
+:question: "Which port do you want to start from?: Example 20501"
 
 :point_right: **20501**
 
