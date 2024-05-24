@@ -89,4 +89,8 @@ gen_3proxy >/usr/local/etc/3proxy/3proxy.cfg
 
 bash /etc/rc.local
 
+iptables --list > /home/proxy-installer/iptables.txt
+
 gen_proxy_file_for_user
+
+echo "Please reboot"

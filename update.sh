@@ -56,4 +56,8 @@ bash /etc/rc.local
 
 gen_proxy_file_for_user
 
+iptables --list > /home/proxy-installer/iptables.txt
+
 echo "Proxy updated!"
+
+echo "Please reboot"
