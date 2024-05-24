@@ -20,7 +20,7 @@
 :point_right: **500** (depends on you)
 
 > [!WARNING]
-> Port starts from **10001**, if you create **500** proxies, the port range will be **10001 - 10500**
+> Port starts from **20001**, if you create **500** proxies, the port range will be **20001 - 20500**
 
 :four:  `sudo reboot`
 
@@ -30,9 +30,9 @@
 
 :question: "Which port do you want to start from?: Example 10501"
 
-:point_right: **10501**
+:point_right: **20501**
 
-:question: "How many proxy do you want to create? Example 100"
+:question: "How many proxy do you want to add? Example 100"
 
 :point_right: **100**
 

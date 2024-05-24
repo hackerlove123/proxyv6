@@ -73,7 +73,7 @@ IP4=$(curl -4 -s icanhazip.com)
 IP6=$(curl -6 -s icanhazip.com | cut -f1-4 -d':')
 echo "Internal ip = ${IP4}. Exteranl sub for ip6 = ${IP6}"
 
-echo "Which port do you want to start from?: Example 10501"
+echo "Which port do you want to start from?: Example 20501"
 read COUNT1
 echo "How many proxy do you want to add? Example 100"
 read COUNT2
