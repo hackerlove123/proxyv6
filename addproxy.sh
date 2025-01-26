@@ -52,7 +52,7 @@ EOF
 
 gen_data() {
     seq $FIRST_PORT $LAST_PORT | while read port; do
-        echo "aloproxy/$(random_password)/$IP4/$port/$(gen64 $IP6)"
+        echo "aloproxy-$(random_name)/$(random_password)/$IP4/$port/$(gen64 $IP6)"
     done
 }
 gen_iptables() {
